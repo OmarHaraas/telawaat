@@ -1,0 +1,65 @@
+name: telawaat #new telawaat app
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  audioplayers: ^6.1.0
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.3.2
+  syncfusion_flutter_pdfviewer: ^27.1.55
+  url_launcher: ^6.3.1
+  
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.1
+  flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.4.2
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icons/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/icons/icon.png"
+
+  windows:
+    generate: true
+    image_path: "assets/icons/icon.png"
+    icon_size: 48 # min:48, max:256, default: 48
+
+
+
+flutter_native_splash:
+  color: "#42a5f5"
+  image: "assets/icons/icon.png"
+  android_gravity: center
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/icon.png
+    - assets/books/
+    - assets/jsons/azkar.json
+    - assets/status/1.png
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
